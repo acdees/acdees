@@ -2,7 +2,10 @@
 acdees/acdees is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
-**Level 0** 
+
+# Over The Wire Bandit Game
+
+### Level 0
 
 The goal of this level was to login onto the server where the game is stored. I was given the information the the name of the site, a username and password to sign into it, the port it needs to connect to, and the fact that it was an ssh.
 
@@ -24,11 +27,11 @@ I used cd to change to the home directory and ls to make sure that i was in the 
 I found these commands by looking at the man pages for level 0's suggested commands.
 
 The password is: 
-NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+**NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL**
 
 Each time I gained a password for a level I had to relogin to the game using the username of bandit# and the password i found in the previous level. (# represents the number of whatever level I was trying to access)
 
-**Level 1**
+### Level 1
 
 For this level I had to print the contents of a file with a dash (‘ - ‘) as its name. 
 
@@ -38,9 +41,9 @@ I searched on google for how to call a file with a dash as its name and found th
 
 I used the command cat ./- to get the output of the file.
 
-rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi was the password that was output for the next level
+**rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi** was the password that was output for the next level
 
-**Level 2**
+### Level 2
 
 The goal of level two was to print data from a file that contained spaces in its name. 
 
@@ -52,9 +55,9 @@ I used the line: cat "spaces in this filename"
 
 However I also found that another way to do this was: cat spaces\in\this\filename Regardless of which I did, I still got the output with the password which was 
 
-aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+**aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG**
 
-**Level 3**
+### Level 3
 
 The goal of this level was to access a hidden file in the inhere directory and print the password from it.
 
@@ -64,9 +67,9 @@ I looked through the man pages for ls, file and find. I found that I could use t
 and used it to see what files were in the directory including the hidden ones. The command caused two files to output . and ./.hidden
 I then used the command cat ./.hidden and got the password:
 
-2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+**2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe**
 
-**Level 4**
+### Level 4
 
 The task for this level was like the last in which I needed to access a file in the inhere directory. The difference being that this time the file I needed was the only human-readable file in the directory.
 
@@ -84,9 +87,9 @@ I then used the find command to see the names of all the files and then used the
 
 After doing this I put in the command cat ./-file07 and got the password: 
 
-lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+**lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR**
 
-**Level 5**
+### Level 5
 
 For level 5 I had to find the password that was in a file that met certain criteria.
 It was in the directory inhere and the file was a specific type and length.
@@ -97,9 +100,9 @@ This output that the file i wanted was in the maybehere07 director. I changed di
 
 After that I found the password for level 6 to be:
 
-P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+**P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU**
 
-**Level 6**
+### Level 6
 
 For level 6 the password could be found in a file owned by a specific user and group and the file was a certain size.
 Using the find command I searched for the group, user and size of the file I needed. 
@@ -108,11 +111,11 @@ I thought I had done something wrong but I realized that within the many files t
 
 To get the output of the password I did a simple cat “/var/lib/dpkg/info/bandit7.password” command and got:
 
-z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+**z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S**
 
 ![image](https://github.com/acdees/acdees/assets/158079550/6be0fced-fedd-460f-a773-98b2c2f8565f)
 
-**Level 7**
+### Level 7
 
 For this level the password could be found in a specific text file next to the word millionth. 
 
@@ -122,17 +125,17 @@ I knew that I needed to use the grep command but I did not know the opperation f
 
 Using this I did the command grep -w millionth* and got the password:
 
-TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+**TESKZC0XvTetK0S9xNwm25STk5iWrBvP**
 
 I had first tried doing grep -w millionth but it did not output anything for me without the wildcard added in.
 
-**Level 8**
+### Level 8
 
 The password to move on to level 9 could be found in the data.txt file. It is the only line of text that shows up exactly once. 
 
 I used the sort command on data.txt so it would be easy to spot if something didn’t have a pair. This allowed me to find the password:
 
-EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+**EN632PlfYiZbn3PhVK3XOGSlNInNE00t**
 
 After finding the password I tried again to find it using strictly commands. I tried using the sort and uniq commands together but it would give me a long list of different strings and not the strictly unique string.
 
@@ -144,7 +147,7 @@ Even though I had already found the password, I didn’t like that I couldn’t 
 
 After finally getting a command line to work it served as a double check that the password I found when looking through the sorted list was still the one I was looking for overall.
 
-**Level 9**
+### Level 9
 
 The password for level 10 is in the data.txt file. It is a human-readable string with multiple ‘=’ in front of it. 
 
@@ -154,11 +157,11 @@ After doing this I could look through the strings and find the correct password,
 I first tried using the sort but that did not help me much. I then thought to use the grep and designate multiple of the equal symbols for what grep was looking for. this was because the level had specified that there would be multiple equal signs preceding the password. 
 
 To get the grep to be most effective I first used the strings command and then piped that output into a grep. This allowed me to narrow down my options to 4 and in those options the text read the message “the password is” and then the following line held the password:
-G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+**G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s**
 
 ![image](https://github.com/acdees/acdees/assets/158079550/6c0d6cb6-dd99-490e-8316-5d7bfff0c8cf)
 
-**Level 10**
+### Level 10
 
 For level 10 I needed find the password in the data.txt file. The difference with this file is that it contained base64 encoded data.
 
@@ -170,7 +173,7 @@ Once I knew the command I then knew that I could pipe the output to a cat and it
 
 The password ended up being:
 
-6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+**6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM**
 
 
 
