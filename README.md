@@ -15,7 +15,7 @@ I first tried ssh -L bandit.labs.overthewire.org which did not work. I also trie
 
 ![image](https://github.com/acdees/acdees/assets/158079550/37196b51-5427-4e7b-9bbc-4326b18f7264)
 
-Finallly i gained access by using the command ssh bandit0@bandit.labs.overthewire.org -p 2220
+Finallly I gained access by using the command ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 It then prompted for a password which was Bandit0
 
@@ -175,7 +175,9 @@ The password ended up being:
 
 **6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM**
 
+### Overall
 
+This is a very fun and easy way to learn how to navigate linux commands. While it is a little daunting to start with, because you dont know how to do anything yet, the suggestions that overthewire gives you are very helpful and because you are just trying to learn techniques on how to use the terminal, there are many ways for you to learn and do things. Its nice being able to get to a solution to a problem without worrying that you didnt follow the right format. The thing I like about coding is there is always some goal you are trying to achieve. This was also enjoyable because not only is the game a fun tool to learn commands, but I know that learning them is benefical for me and that I will likely need to know them in the future. Even if I end up not doing much in Linux, the basis of terminal coding will still be helpful knowledge.
 
 
 
